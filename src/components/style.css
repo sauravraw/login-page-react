@@ -52,11 +52,12 @@ input:focus {
 	box-shadow: 0px 0px 12px 0.8px #0e81ce96;
 }
 .right-side {
+	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 90%;
-	background-color: #3498db;
+	height: 80%;
+	background: linear-gradient(to right, #283048, #859398);
 	width: 100%;
 	position: absolute;
 	right: -34%;
@@ -82,11 +83,13 @@ input:focus {
 	right: 45%;
 }
 
+/* Button */
+
 .btn {
 	font-size: 21px;
 	padding: 5px 20px;
 	border: 0;
-	background-color: #3498db;
+	background-color: #5e6b70;
 	color: #fff;
 	border-radius: 3px;
 	transition: all 250ms ease-in-out;

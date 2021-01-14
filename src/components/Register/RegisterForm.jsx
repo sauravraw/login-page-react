@@ -1,38 +1,45 @@
 import React, { Component } from "react";
+import image from "../../images/register.png";
 
-export class Login extends Component {
+class RegisterForm extends Component {
 	render() {
 		return (
 			<div className="base-container" ref={this.props.containerRef}>
-				<div className="header">Login</div>
+				<div className="header">Register</div>
 				<div className="content">
-					<div className="image">{/* Image part */}</div>
+					<div className="image">
+						<img src={image} alt="Register" />
+					</div>
 					<div className="form">
 						<div className="form-group">
 							<input
 								type="text"
-								name="username"
+								name="userName"
+								required
 								placeholder="UserName"
+							/>
+						</div>
+						<div className="form-group">
+							<input
+								type="email"
+								name="email"
+								required
+								placeholder="email@ex.com"
 							/>
 						</div>
 						<div className="form-group">
 							<input
 								type="password"
 								name="password"
+								required
 								placeholder="Password"
 							/>
 						</div>
 					</div>
 				</div>
-				<div className="footer">
-					<button type="button" className="btn">
-						Login
-					</button>
-					<button type="reset" className="btn">
-						Reset
-					</button>
-				</div>
 			</div>
 		);
 	}
 }
+
+export default RegisterForm;

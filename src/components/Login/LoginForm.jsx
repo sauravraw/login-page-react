@@ -1,24 +1,20 @@
 import React, { Component } from "react";
-
-export class Register extends Component {
+import image from "../../images/login.png";
+class LoginForm extends Component {
 	render() {
 		return (
 			<div className="base-container" ref={this.props.containerRef}>
-				<div className="header">Register</div>
+				<div className="header">Login</div>
 				<div className="content">
-					<div className="image">{/* Image part */}</div>
+					<div className="image">
+						<img src={image} alt="Login" />
+					</div>
 					<div className="form">
-						<div className="form-group">
-							<input
-								type="text"
-								name="username"
-								placeholder="UserName"
-							/>
-						</div>
 						<div className="form-group">
 							<input
 								type="email"
 								name="email"
+								required
 								placeholder="email@ex.com"
 							/>
 						</div>
@@ -26,20 +22,15 @@ export class Register extends Component {
 							<input
 								type="password"
 								name="password"
+								required
 								placeholder="Password"
 							/>
 						</div>
 					</div>
 				</div>
-				<div className="footer">
-					<button type="button" className="btn">
-						Register
-					</button>
-					<button type="reset" className="btn">
-						Reset
-					</button>
-				</div>
 			</div>
 		);
 	}
 }
+
+export default LoginForm;
