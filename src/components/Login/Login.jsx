@@ -30,7 +30,7 @@ export class Login extends Component {
 				alert("Login Successfully");
 			})
 			.catch((err) => {
-				alert(`${form.userName.value}, Please try again :)`);
+				alert(`${form.email.value}, Please try again :)`);
 				alert(err);
 				console.log(err);
 			});
