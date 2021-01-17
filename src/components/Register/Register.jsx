@@ -11,6 +11,7 @@ export class Register extends Component {
 			email: form.email.value,
 			password: form.password.value,
 		};
+		console.log(formObj);
 		fetch(`${url}users/signup`, {
 			method: "POST",
 			headers: {
@@ -24,7 +25,9 @@ export class Register extends Component {
 			})
 			.then((data) => {
 				form.reset();
-				alert("User registered Successfully...!!!");
+				alert(form.email.value + " registered Successfully...!!!");
+				console.log(data);
+				console.log(form.email.value);
 			})
 			.catch((err) => {
 				alert(`${form.userName.value}, Please try again :)`);

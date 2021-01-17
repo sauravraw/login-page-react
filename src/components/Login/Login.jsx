@@ -26,8 +26,15 @@ export class Login extends Component {
 				return response.json();
 			})
 			.then((data) => {
-				form.reset();
-				alert("Login Successfully");
+				console.log(data);
+				if (data.data) {
+					this.setState({ status: "Successful" });
+					form.reset();
+					alert("Login Successfully");
+					console.log(data);
+				} else {
+					console.error();
+				}
 			})
 			.catch((err) => {
 				alert(`${form.email.value}, Please try again :)`);
