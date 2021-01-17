@@ -42,14 +42,10 @@ export class Register extends Component {
 				<form onSubmit={this.submitForm}>
 					<RegisterForm />
 					<div className="footer">
-						<button
-							type="submit"
-							value="submit"
-							className={styles["btn"]}
-						>
+						<button type="submit" value="submit" className="btn">
 							Register
 						</button>
-						<button type="reset" value="reset" className={styles["btn"]}>
+						<button type="reset" value="reset" className="btn">
 							Reset
 						</button>
 					</div>
