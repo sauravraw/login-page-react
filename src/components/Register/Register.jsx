@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import url from "../ApiCall";
 import RegisterForm from "./RegisterForm";
+import styles from "../../styles/style.css";
 
 export class Register extends Component {
 	submitForm = (event) => {
@@ -41,10 +42,14 @@ export class Register extends Component {
 				<form onSubmit={this.submitForm}>
 					<RegisterForm />
 					<div className="footer">
-						<button type="submit" value="submit" className="btn">
+						<button
+							type="submit"
+							value="submit"
+							className={styles["btn"]}
+						>
 							Register
 						</button>
-						<button type="reset" value="reset" className="btn">
+						<button type="reset" value="reset" className={styles["btn"]}>
 							Reset
 						</button>
 					</div>

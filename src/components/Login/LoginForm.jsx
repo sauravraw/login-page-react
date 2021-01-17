@@ -1,16 +1,18 @@
 import React, { Component } from "react";
 import image from "../../images/login.png";
+import styles from "../../styles/style.css";
+
 class LoginForm extends Component {
 	render() {
 		return (
-			<div className="base-container" ref={this.props.containerRef}>
-				<div className="header">Login</div>
-				<div className="content">
-					<div className="image">
+			<div className={styles["basecontainer"]} ref={this.props.containerRef}>
+				<div className={styles["header"]}>Login</div>
+				<div className={styles["content"]}>
+					<div className={styles["image"]}>
 						<img src={image} alt="Login" />
 					</div>
-					<div className="form">
-						<div className="form-group">
+					<div className={styles["form"]}>
+						<div className={styles["form-group"]}>
 							<input
 								type="email"
 								name="email"
@@ -18,7 +20,7 @@ class LoginForm extends Component {
 								placeholder="email@ex.com"
 							/>
 						</div>
-						<div className="form-group">
+						<div className={styles["form-group"]}>
 							<input
 								type="password"
 								name="password"

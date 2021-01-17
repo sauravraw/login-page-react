@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import url from "../ApiCall";
 import Dashboard from "../DashBoard/Dashboard";
 import LoginForm from "./LoginForm";
+import styles from "../../styles/style.css";
 
 export class Login extends Component {
 	state = {
@@ -50,7 +51,7 @@ export class Login extends Component {
 				) : (
 					<form onSubmit={this.submitForm}>
 						<LoginForm />
-						<div className="footer">
+						<div className={styles["footer"]}>
 							<button type="submit" value="submit" className="btn">
 								Login
 							</button>
