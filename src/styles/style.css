@@ -154,3 +154,9 @@ input:focus {
 .footer {
 	margin-top: 3em;
 }
+
+@media screen and (max-width: 946px) {
+	.App {
+		margin-left: -135px;
+	}
+}

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import url from "../ApiCall";
 import RegisterForm from "./RegisterForm";
 
-export class Register extends Component {
+class Register extends Component {
 	submitForm = (event) => {
 		event.preventDefault();
 		let form = event.target;
@@ -25,7 +25,9 @@ export class Register extends Component {
 			})
 			.then((data) => {
 				form.reset();
-				alert(form.email.value + " registered Successfully...!!!");
+				alert(
+					`${form.userName.value} registered Successfully...!!! with ${form.email.value} Id....!!!`
+				);
 				console.log(data);
 				console.log(form.email.value);
 			})
@@ -53,3 +55,5 @@ export class Register extends Component {
 		);
 	}
 }
+
+export default Register;

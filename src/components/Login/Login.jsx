@@ -4,7 +4,7 @@ import Dashboard from "../DashBoard/Dashboard";
 import LoginForm from "./LoginForm";
 import styles from "../../styles/style.css";
 
-export class Login extends Component {
+class Login extends Component {
 	state = {
 		status: "",
 	};
@@ -32,6 +32,7 @@ export class Login extends Component {
 					this.setState({ status: "Successful" });
 					form.reset();
 					alert("Login Successfully");
+					console.log(this.props, "Saurav");
 					console.log(data);
 				} else {
 					console.error();
@@ -65,3 +66,5 @@ export class Login extends Component {
 		);
 	}
 }
+
+export default Login;

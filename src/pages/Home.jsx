@@ -1,5 +1,6 @@
 import React from "react";
-import { Login, Register } from "../components/index";
+import Login from "../components/Login/Login";
+import Register from "../components/Register/Register";
 import RightSide from "../components/RightSide";
 
 export default class Home extends React.Component {
@@ -36,7 +37,6 @@ export default class Home extends React.Component {
 		const currentActive = isLogginActive ? "login" : "register";
 		return (
 			<div className="App">
-				<canvas></canvas>
 				<div className="login">
 					<div className="container" ref={(ref) => (this.container = ref)}>
 						{isLogginActive && (

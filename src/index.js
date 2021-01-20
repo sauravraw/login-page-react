@@ -10,7 +10,6 @@ ReactDOM.render(
 		<ParticlesBg type="cobweb" color="#ff0000" bg={true} num={100} />
 
 		<App />
-		<script src="./canvas.js"></script>
 	</React.StrictMode>,
 	document.getElementById("root")
 );
