@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Login } from "../components/Login/Login";
-import { Register } from "../components/Register/Register";
+import Home from "../pages/Home";
+import DashBoard from "../components/DashBoard/Dashboard";
 
 // Pages
 
@@ -11,8 +11,8 @@ export default class Router extends Component {
 			<div>
 				<BrowserRouter>
 					<Switch>
-						<Route path="/login" exact Component={Login} />
-						<Route path="/register" exact Component={Register} />
+						<Route path="/" exact Component={Home} />
+						<Route path="/dashboard" exact Component={Register} />
 					</Switch>
 				</BrowserRouter>
 			</div>

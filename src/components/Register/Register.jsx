@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import url from "../ApiCall";
 import RegisterForm from "./RegisterForm";
-import styles from "../../styles/style.css";
 
 export class Register extends Component {
 	submitForm = (event) => {

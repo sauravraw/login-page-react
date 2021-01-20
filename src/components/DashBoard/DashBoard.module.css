@@ -1,0 +1,9 @@
+div.dashboarddiv {
+	width: 100%;
+	height: 100%;
+}
+
+h1.dashboardh1 {
+	color: black;
+	font-size: 30px;
+}

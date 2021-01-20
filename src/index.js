@@ -7,7 +7,7 @@ import ParticlesBg from "particles-bg";
 
 ReactDOM.render(
 	<React.StrictMode>
-		<ParticlesBg type="fountain" bg={true} num={25} />
+		<ParticlesBg type="cobweb" color="#ff0000" bg={true} num={100} />
 
 		<App />
 		<script src="./canvas.js"></script>
