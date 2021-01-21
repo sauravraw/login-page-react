@@ -25,11 +25,7 @@ class Register extends Component {
 			})
 			.then((data) => {
 				form.reset();
-				alert(
-					`${form.userName.value} registered Successfully...!!! with ${form.email.value} Id....!!!`
-				);
-				console.log(data);
-				console.log(form.email.value);
+				alert(`Registered Successfully...!!!`);
 			})
 			.catch((err) => {
 				alert(`${form.userName.value}, Please try again :)`);

@@ -27,13 +27,10 @@ class Login extends Component {
 				return response.json();
 			})
 			.then((data) => {
-				console.log(data);
 				if (data.data) {
 					this.setState({ status: "Successful" });
 					form.reset();
 					alert("Login Successfully");
-					console.log(this.props, "Saurav");
-					console.log(data);
 				} else {
 					console.error();
 				}
